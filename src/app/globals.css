@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-height: 7.5rem;
+
+  --scrollbar-track: 0 0% 92%;
+  --scrollbar-thumb: 0 0% 82%;
+  --scrollbar-thumb-hover: 0 0% 77%;
+
+  --radius: 0.625rem;
+
+  --background: 0 0% 100%;
+  --foreground: 0 0% 8%;
+  --foreground-alt: 0 0% 2%;
+
+  --card: 1 0 0;
+  --card-foreground: 0.141 0.005 285.823;
+  --popover: 1 0 0;
+  --popover-foreground: 0.141 0.005 285.823;
+
+  --primary: 42 20% 82%;
+  --primary-alt: 42 20% 90%;
+  --primary-foreground: 0 0% 20%;
+  --secondary: 0 0% 8%;
+  --secondary-alt: 0 0% 16%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 239.99 4% 96%;
+  --muted-foreground: 240.1 4% 46%;
+  --accent: 239.99 4% 96%;
+  --accent-foreground: 240.02 6% 10%;
+  --destructive: 357.18 100% 45%;
+  --danger: 11 90% 40%;
+  --violet-background: 260 20% 88%;
+  --gray: 0 0% 12%;
+
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 240 4% 64%;
+  --ring-opaque: 240 4% 64% / 0.31;
+
+  --chart-1: 0.646 0.222 41.116;
+  --chart-2: 0.6 0.118 184.704;
+  --chart-3: 0.398 0.07 227.392;
+  --chart-4: 0.828 0.189 84.429;
+  --chart-5: 0.769 0.188 70.08;
+
+  --gradient-1: linear-gradient(23deg, #938780 0%, #d7b3ab 62%);
+  --gradient-2: linear-gradient(334deg, #97919e 0%, #afbcb7 80%);
+  --gradient-3: linear-gradient(17deg, #786472 0%, #c1babe 78%);
+  --gradient-4: linear-gradient(334deg, #898687 1%, #cbbbaf 80%);
+
+  --gradient-5: linear-gradient(299deg, #6e9a93 0%, #caddb5 45%);
+  --gradient-6: linear-gradient(116deg, #eae1bb 0%, #d6b9ba 100%);
+  --gradient-7: linear-gradient(296deg, #6e9a93 0%, #caddb5 45%);
+  --gradient-8: linear-gradient(300deg, #ebebe6 0%, #fdc1c1 100%);
+  --gradient-9: linear-gradient(285deg, #c1b886 0%, #f0cf8c 100%);
+
+  --gradient-10: linear-gradient(342deg, #82798c 0%, #b0bab8 60%);
+
+  --gradient-11: linear-gradient(312deg, #b3b1b1 0%, #e9dfd7 50%);
+
+  --text-xs: 0.625rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.85rem;
+  --text-lg: 1rem;
+  --text-xl: 1rem;
+  --text-2xl: 1.125rem;
+  --text-3xl: 1.25rem;
+  --text-4xl: 1.375rem;
+  --text-5xl: 1.5rem;
+  --text-6xl: 1.75rem;
+  --text-7xl: 2rem;
+  --text-10xl: 2.25rem;
+  /*--text-xl: 1.125rem;
+  --text-2xl: 1.25rem;
+  --text-3xl: 1.5rem;
+  --text-4xl: 1.75rem;
+  --text-5xl: 2.0365625rem;
+  --text-6xl: 2.441171875rem;
+  --text-7xl: 3.5rem;
+  --text-10xl: 5.25rem;*/
+  --text-6xl-line-height: 1.22;
+  --text-7xl-line-height: 1.19;
+  --text-10xl-line-height: 1.19;
+
+  @media (min-width: 520px) {
+    --text-7xl: 3rem;
+    --text-10xl: 4.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    --text-xs: 0.75rem;
+    --text-sm: 0.85rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.85rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 2.909375rem;
+    --text-6xl: 3.4453125rem;
+    --text-7xl: 4.025rem;
+    --text-10xl: 7.5rem;
+    --text-6xl-line-height: 1.19;
+    --text-7xl-line-height: 1.2;
+    --text-10xl-line-height: 8.75rem;
+  }
+
+  @media (min-width: 768px) {
+    --nav-height: 9.25rem;
+  }
+}
+
+.dark {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 8%;
+  --foreground-alt: 0 0% 2%;
+
+  --card: 0.21 0.006 285.885;
+  --card-foreground: 0.985 0 0;
+
+  --popover: 0.21 0.006 285.885;
+  --popover-foreground: 0.985 0 0;
+
+  --primary: 42 20% 82%;
+  --primary-alt: 42 20% 88%;
+  --primary-foreground: 0 0% 20%;
+  --secondary: 0 0% 8%;
+  --secondary-alt: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 239.99 4% 96%;
+  --muted-foreground: 240.1 4% 46%;
+  --accent: 239.99 4% 96%;
+  --accent-foreground: 240.02 6% 10%;
+  --destructive: 357.18 100% 45%;
+
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 240 4% 47%;
+  --ring-opaque: 240 4% 47% / 0.31;
+
+  --chart-1: 0.488 0.243 264.376;
+  --chart-2: 0.696 0.17 162.48;
+  --chart-3: 0.769 0.188 70.08;
+  --chart-4: 0.627 0.265 303.9;
+  --chart-5: 0.645 0.246 16.439;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-primary font-sans text-base text-foreground antialiased;
+  }
+
+  a,
+  .focus {
+    @apply focus-visible:outline-dashed focus-visible:outline-1 focus-visible:outline-offset-2;
+  }
+  a:focus-visible,
+  .focus:focus-visible {
+    outline-color: blend-mode(var(--secondary) var(--primary));
+  }
+
+  input,
+  textarea {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: var(--muted-foreground);
+      transition: background-color 5000s ease-in-out 0s;
+      box-shadow: inset 0 0 20px 20px transparent;
+    }
+  }
+}
+
+@layer utilities {
+  .no-scroll {
+    @apply overflow-hidden;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scroll::-webkit-scrollbar {
+    @apply h-2.5 w-2.5;
+  }
+  .custom-scroll::-webkit-scrollbar-track {
+    @apply bg-[--scrollbar-track];
+  }
+  .custom-scroll::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-[--scrollbar-thumb];
+  }
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    @apply bg-[--scrollbar-thumb-hover];
+  }
+
+  .container {
+    @apply mx-auto max-w-full px-4 py-16 sm:max-w-full sm:py-20 lg:px-8 xl:max-w-[1536px] xl:py-28;
+  }
+}

@@ -9,7 +9,7 @@ export const siteMetadata = {
   language: "en-us",
   theme: "light",
   siteUrl: new URL(getURL()),
-  socialBanner: "/assets/images/og.png",
+  socialBanner: `${getURL()}/assets/images/og.png`,
   locale: "en-US",
 };
 

@@ -1,15 +1,15 @@
 import { getURL } from "./config";
 
 export const siteMetadata = {
-  title: "Misfit",
-  author: "Misift",
-  headerTitle: "Misfit",
+  title: "Misfit Marketing",
+  author: "Misfit Marketing",
+  headerTitle: "Misfit Marketing",
   description:
-    "Misfit is a creative studio that helps brands build their digital presence and grow their audience.",
+    "Misfit Marketing is a creative studio that helps brands build their digital presence and grow their audience. We are based in Austin, TX and Brooklyn, NY.",
   language: "en-us",
   theme: "light",
   siteUrl: new URL(getURL()),
-  socialBanner: "/assets/images/social/og.png",
+  socialBanner: "/assets/images/og.png",
   locale: "en-US",
 };
 

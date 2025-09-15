@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://misfitmarketing.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow all other content
+Allow: /work/
+Allow: /approach/
+Allow: /culture/
+Allow: /privacy-policy/

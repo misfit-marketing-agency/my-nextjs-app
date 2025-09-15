@@ -25,6 +25,7 @@ export default function Footer() {
               <div>
                 <PlanProject>
                   <Button
+                    aria-label="Plan a project"
                     asChild
                     size="lg"
                     className="w-fit gap-6 text-base font-bold focus-visible:outline-primary sm:h-[4.2rem] sm:gap-8 md:gap-12"
@@ -62,6 +63,7 @@ export default function Footer() {
                     <li key={index}>
                       {href ? (
                         <Link
+                          aria-label={label}
                           href={href}
                           target="_blank"
                           className="font-inter text-base text-primary underline"
@@ -85,7 +87,9 @@ export default function Footer() {
                     variant="outline"
                     className="ml-auto w-full max-w-[736px] border-primary text-primary focus-visible:outline-primary"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link aria-label={label} href={href}>
+                      {label}
+                    </Link>
                   </Button>
                 ))}
               </div>
@@ -95,6 +99,7 @@ export default function Footer() {
           {/* 3 */}
           <div className="justify-betweeen flex flex-wrap items-center justify-between gap-6 pt-12 sm:pt-16">
             <Link
+              aria-label="Privacy Policy"
               href="/privacy-policy"
               className="font-sans-alt text-base text-primary underline"
             >
@@ -108,7 +113,7 @@ export default function Footer() {
                   variant="outline"
                   className="h-9 border-primary px-6 text-primary focus-visible:outline-primary sm:px-12"
                 >
-                  <Link href={href} target="_blank">
+                  <Link aria-label={label} href={href} target="_blank">
                     {label}
                   </Link>
                 </Button>

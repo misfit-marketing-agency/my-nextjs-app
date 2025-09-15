@@ -37,15 +37,6 @@ export default function WorkShowcase({
           !gradient && "bg-primary"
         )}
       />
-      {/* {instagram && (
-        <Link
-          href={instagram}
-          className="text-gray absolute top-[1.5rem] left-[2rem] inline-flex sm:left-[3.5rem] lg:top-[3rem] xl:top-[5rem]"
-          target="_blank"
-        >
-          <Instagram className="h-6 w-6 sm:h-7 sm:w-7" />
-        </Link>
-      )} */}
       <div className="container relative">
         <div
           className={cn(

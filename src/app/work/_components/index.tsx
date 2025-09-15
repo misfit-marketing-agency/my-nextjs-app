@@ -67,8 +67,13 @@ async function WorkCard({
                 </p>
               </div>
               <div className="flex w-full justify-end">
-                <Button asChild variant="secondary" size="icon">
-                  <Link href={href}>
+                <Button
+                  aria-label={label}
+                  asChild
+                  variant="secondary"
+                  size="icon"
+                >
+                  <Link aria-label={label} href={href}>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>

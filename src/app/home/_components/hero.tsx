@@ -66,12 +66,13 @@ export default function HomeHero() {
                         <div className="flex flex-1 flex-col items-end justify-end gap-6 pb-6 pt-3">
                           <Divide />
                           <Button
+                            aria-label={label}
                             asChild
                             size="icon-sm"
                             variant="secondary"
                             className="text-background"
                           >
-                            <Link href={href}>
+                            <Link aria-label={label} href={href}>
                               <ArrowRight className="h-4 w-4" />
                             </Link>
                           </Button>

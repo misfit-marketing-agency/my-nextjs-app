@@ -27,8 +27,8 @@ function WorkCardBasic({ name, description, href }: Work) {
               {description}
             </p>
           </div>
-          <Button asChild size="icon" className="my-auto">
-            <Link href={href}>
+          <Button aria-label={name} asChild size="icon" className="my-auto">
+            <Link aria-label={name} href={href}>
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
@@ -90,8 +90,13 @@ async function WorkCardComplex({
                 </p>
               </div>
               <div className="flex w-full justify-end">
-                <Button asChild variant="secondary" size="icon">
-                  <Link href={href}>
+                <Button
+                  aria-label={name}
+                  asChild
+                  variant="secondary"
+                  size="icon"
+                >
+                  <Link aria-label={name} href={href}>
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -147,7 +152,7 @@ export default function HomeWork() {
               size="lg"
               className="w-fit gap-6 text-base font-bold sm:h-[4.2rem] sm:gap-8 md:gap-12"
             >
-              <Link href="/work">
+              <Link aria-label="Browse all works" href="/work">
                 Browse all works
                 <span className="inline-flex h-[2.2rem] w-[2.2rem] items-center justify-center rounded-full bg-foreground text-primary sm:h-[2.625rem] sm:w-[2.625rem]">
                   <ArrowRight className="!h-3.5 !w-3.5 sm:!h-4 sm:!w-4" />

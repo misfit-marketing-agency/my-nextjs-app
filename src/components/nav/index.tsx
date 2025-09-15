@@ -34,7 +34,7 @@ export default function Nav() {
                       isActive && "bg-secondary/5"
                     )}
                   >
-                    <Link key={index} href={href}>
+                    <Link aria-label={label} key={index} href={href}>
                       {label}
                     </Link>
                   </Button>
@@ -46,6 +46,7 @@ export default function Nav() {
           <div className="flex items-center lg:hidden">
             {/* <PlanProjectButton /> */}
             <Button
+              aria-label="Menu"
               variant="ghost"
               size="lg"
               className={cn("bg-transparent", "hover:bg-transparent")}

@@ -10,6 +10,7 @@ type Props = {
 export default function Logo({ className }: Props) {
   return (
     <Link
+      aria-label="Home"
       href="/"
       className={cn("inline-flex items-center justify-center", className)}
     >

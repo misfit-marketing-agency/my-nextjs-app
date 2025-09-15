@@ -182,6 +182,7 @@ export default function PlanProject({ children }: Props) {
               }}
             >
               <Button
+                aria-label="Close"
                 variant="ghost"
                 size="icon"
                 className="absolute right-6 top-6 h-[2.45rem] w-[2.45rem] rounded-full bg-foreground-alt hover:bg-foreground-alt/80 hover:text-background"
@@ -352,6 +353,7 @@ export default function PlanProject({ children }: Props) {
                   <div className="sticky bottom-0 left-0">
                     <Button
                       disabled={isSubmitting}
+                      aria-label="Let's get started"
                       variant="ghost"
                       size="lg"
                       className="w-full justify-between gap-6 bg-secondary px-5 font-konstanz text-base font-bold text-background hover:bg-secondary-alt hover:text-background sm:h-[4.2rem] sm:gap-8 sm:px-8 md:gap-12"

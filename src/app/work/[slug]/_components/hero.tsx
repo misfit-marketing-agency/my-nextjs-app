@@ -61,11 +61,12 @@ export default async function WorkHero({
                     ))}
                   </div>
                   <Button
+                    aria-label="View site"
                     asChild
                     variant="ghost"
                     className="gap-4 hover:bg-transparent"
                   >
-                    <Link href={website} target="_blank">
+                    <Link aria-label="View site" href={website} target="_blank">
                       View site{" "}
                       <div className="bg-secondary text-background inline-flex h-7 w-7 items-center justify-center rounded-full">
                         <span className="-rotate-45">

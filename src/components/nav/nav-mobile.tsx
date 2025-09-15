@@ -71,6 +71,7 @@ export default function NavMobile({ isOpen, setOpen }: Props) {
         <div className="flex h-fit w-full flex-col transition-transform">
           <div className="flex items-start justify-end gap-x-6 p-4">
             <Button
+              aria-label="Close menu"
               variant="ghost"
               size="icon"
               className={cn("nav__close", "hover:bg-transparent")}
@@ -94,6 +95,7 @@ export default function NavMobile({ isOpen, setOpen }: Props) {
                     )}
                   >
                     <Link
+                      aria-label={label}
                       href={href}
                       onClick={() =>
                         (
@@ -109,9 +111,9 @@ export default function NavMobile({ isOpen, setOpen }: Props) {
                 </li>
               );
             })}
-            <div className="w-full px-6">
+            <li className="w-full px-6">
               <PlanProjectButton className="w-full" />
-            </div>
+            </li>
           </ul>
         </div>
       </div>

@@ -66,8 +66,8 @@ async function WorkCardComplex({
           }}
         >
           <div className="flex w-full flex-col items-center gap-6 px-6 py-10">
-            <div className="aspect-[394/234] w-[88%] overflow-hidden rounded-full border border-secondary bg-transparent p-1 md:!w-1/2 xs:w-3/4">
-              <div className="relative h-full rounded-full bg-muted">
+            <div className="flex aspect-[394/234] w-[88%] items-center justify-center overflow-hidden rounded-full border border-secondary bg-transparent p-1 md:!w-1/2 xs:w-3/4">
+              <div className="relative h-full w-full rounded-full bg-muted">
                 <Image
                   src={image.path}
                   alt={name}

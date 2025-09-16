@@ -9,7 +9,7 @@ export default function PrivacyPolicyMain() {
     <div className="w-full">
       <div className="container !pt-10 sm:!pt-14">
         {/* Main Title */}
-        <h1 className="mb-12 text-7xl font-medium sm:mb-16">Privacy Policy</h1>
+        <h1 className="mb-8 text-7xl font-medium sm:mb-12">Privacy Policy</h1>
 
         {/* Privacy Policy Content */}
         <div className="flex flex-col gap-10 font-konstanz">

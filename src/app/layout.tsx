@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import BaseLayout from "@/components/layouts/base-layout";
 import { cn } from "@/lib/utils";
@@ -133,6 +134,7 @@ export default function RootLayout({
       >
         <BaseLayout>{children}</BaseLayout>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

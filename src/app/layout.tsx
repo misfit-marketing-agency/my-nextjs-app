@@ -19,7 +19,10 @@ export const metadata = {
   },
   description: siteMetadata.description,
   openGraph: {
-    title: siteMetadata.title,
+    title: {
+      template: `%s | ${siteMetadata.title}`,
+      default: siteMetadata.title,
+    },
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
@@ -38,7 +41,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteMetadata.title,
+    title: {
+      template: `%s | ${siteMetadata.title}`,
+      default: siteMetadata.title,
+    },
     description: siteMetadata.description,
     creator: siteMetadata.author,
     images: [siteMetadata.socialBanner],
@@ -55,7 +61,6 @@ const bogart = localFont({
     { path: "../fonts/bogart_/Bogart-Light.ttf", weight: "300" },
     { path: "../fonts/bogart_/Bogart-Regular.ttf", weight: "400" },
     { path: "../fonts/bogart_/Bogart-Medium.ttf", weight: "500" },
-    // { path: "../fonts/bogart_/Bogart-Semibold.ttf", weight: "600" },
     { path: "../fonts/bogart_/Bogart-Bold.ttf", weight: "700" },
     { path: "../fonts/bogart_/Bogart-Extrabold.ttf", weight: "800" },
   ],
